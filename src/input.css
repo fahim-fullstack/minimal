@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oranienbaum&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import "tailwindcss";
+
+@layer base{
+  body{
+    @apply font-inter 
+  }
+  h1{
+    @apply font-semibold text-[64px] leading-[76px] 
+  }
+  h2{
+    @apply font-semibold text-[36px] leading-11
+  }
+  h3{
+    @apply font-bold text-[28px] leading-9
+  }
+  h4{
+    @apply font-semibold text-[20px] leading-7
+  }
+  p,a{
+    @apply font-medium text-[16px] leading-6
+  }
+}
+
+@utility box{
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+@theme {
+  --font-inter:  "Inter", sans-serif; 
+
+  /* color */
+  --color-brand: #4CAF4F;
+  --color-text: #18191F;
+  --color-neutral-gray: #717171;
+  --color-neutral-white: #ffffff;
+  --color-neutral-black: #263238;
+  --color-neutral-silver: #F5F7FA;
+  --color-neutral-d-gray: #4D4D4D;
+}
